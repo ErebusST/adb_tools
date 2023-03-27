@@ -6,22 +6,15 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.situ;
+package com.situ.tools;
 
-import com.entity.Location;
-import com.situ.tools.FileUtils;
-import com.situ.tools.ObjectUtils;
-import com.situ.tools.StringUtils;
-import com.sun.xml.internal.ws.util.StreamUtils;
+import com.situ.entity.Location;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.junit.Test;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
-import java.io.OutputStream;
-import java.math.BigDecimal;
 
 /**
  * @author 司徒彬

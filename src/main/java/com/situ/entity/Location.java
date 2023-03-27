@@ -6,11 +6,10 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package com.entity;
+package com.situ.entity;
 
 import com.situ.tools.DataSwitch;
 import com.situ.tools.NumberUtils;
-import com.situ.tools.StringUtils;
 import lombok.Getter;
 import lombok.Setter;
 
