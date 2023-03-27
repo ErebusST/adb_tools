@@ -99,7 +99,7 @@ public class AdbTools {
     }
 
 
-    private static void execute(String ip, Integer port, String... commands) {
+    public static void execute(String ip, Integer port, String... commands) {
         port = ObjectUtils.isNull(port) ? 5037 : port;
         execute("adb connect ".concat(ip).concat(":").concat(String.valueOf(port)));
         for (String command : commands) {
