@@ -45,7 +45,7 @@ public class Location {
      */
     public Location left(Number value) {
         this.x = NumberUtils.subtract(this.x, value);
-        return this;
+        return new Location(x, y);
     }
 
     /**
@@ -58,7 +58,7 @@ public class Location {
      */
     public Location right(Number value) {
         this.x = NumberUtils.add(this.x, value);
-        return this;
+        return new Location(x, y);
     }
 
     /**
@@ -71,7 +71,7 @@ public class Location {
      */
     public Location up(Number value) {
         this.y = NumberUtils.add(this.y, value);
-        return this;
+        return new Location(x, y);
     }
 
     /**
@@ -84,7 +84,7 @@ public class Location {
      */
     public Location down(Number value) {
         this.y = NumberUtils.subtract(this.y, value);
-        return this;
+        return new Location(x, y);
     }
 
     public String get() {

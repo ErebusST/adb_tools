@@ -114,13 +114,13 @@ public class AdbTools {
     private static void execute(String command) {
         Process process = null;
         try {
-            log.info("execute:{}", command);
+            //log.info("execute:{}", command);
             process = runtime.exec(command);
             InputStreamReader reader = new InputStreamReader(process.getInputStream());
             LineNumberReader input = new LineNumberReader(reader);
             String line;
             while ((line = input.readLine()) != null) {
-                log.info(line);
+                //log.info(line);
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
